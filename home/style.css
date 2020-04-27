@@ -2,18 +2,38 @@
     height: 100vh;
     z-index: 1;
     overflow: hidden;
+    min-height: 90vh;
+    
 }
 
 .frontpagecontainer {
 
-    width: 100wh;
+    width: 100vw;
     height: 100vh;
 }
 
 .frontpageimage {
 
-    background-image: url(https://sinfo.ams3.cdn.digitaloceanspaces.com/static/27-sinfo/webapp/sinfo-tent.jpg);
+    background-image: url(https://cld.pt/dl/download/dd4adc60-f41a-4354-978f-90c83fc3d4cd/IMG_3469.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    filter: brightness(60%);
+    opacity: 0.7;
+    height: 100vh;
+    width: 100wh;
+}
+
+.frontpagetitle {
+    position: relative;
+    top: 0vh;
+    display: block;
+}
+
+.frontpageletters {
+    font-size: 20vw;
+    font-family: Helvetica;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    color: white;
 }
