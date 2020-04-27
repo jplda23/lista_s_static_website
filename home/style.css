@@ -1,0 +1,19 @@
+#frontpage, {
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.frontpagecontainer {
+
+    width: 100wh;
+    height: 100vh;
+}
+
+.frontpageimage {
+
+    background-image: url(https://sinfo.ams3.cdn.digitaloceanspaces.com/static/27-sinfo/webapp/sinfo-tent.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
