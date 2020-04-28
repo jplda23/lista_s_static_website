@@ -44,7 +44,7 @@
     position: relative;
     top: 0vh;
     display: block;
-    font-size: 25vh;
+    font-size: 20vh;
     font-family: Helvetica;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -71,7 +71,7 @@
 
   @keyframes slideInLeft {
     from {
-      transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-300%, 0, 0);
       visibility: visible;
     }
   
@@ -102,7 +102,8 @@
 
   .frontpagedescription {
     position: relative;
-    bottom: 5vh;
+    top: 20vh;
+    /* left: 30vw; */
     display: block;
     font-size: 6vh;
     font-family: Shifter;
@@ -124,12 +125,16 @@
   text-align: center;
   transform: translate(-50%,-50%);
   display: block;
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  margin-bottom: 2vh;
 }
 
 .arrow span{
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 5vh;
+  height: 5vh;
   border-bottom: 3px solid #00c3e9;
   border-right: 3px solid #00c3e9;
   transform: rotate(45deg);
