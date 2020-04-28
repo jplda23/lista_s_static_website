@@ -434,6 +434,14 @@ body {
     overflow: auto;
     position: relative;
     transition: margin 0.3s ease 0.1s;
+    font-family: Helvetica;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.accordion-content span {
+
+    font-weight: normal;
 }
 
 .accordion-select:checked + .accordion-title + .accordion-content {
