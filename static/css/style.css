@@ -53,7 +53,7 @@ body {
 }
 
 .frontpagecontainer {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -65,8 +65,8 @@ body {
     /* filter: brightness(60%); */
     /* opacity: 0.7; */
     height: 100vh;
-    width: 100wh;
-}
+    width: 100%;
+}.section-title
 
 .frontpageimage>.gradient {
     width: 100%;
@@ -219,6 +219,7 @@ body {
     margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 6vw;
+    padding-top: 20px;
 }
 
 section .section-subtitle {
@@ -309,11 +310,11 @@ section .section-subtitle {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    min-height: 600px;
 }
 
 .backside .card a {
-    font-size: 18px;
+    font-size: 15px;
     color: #016aaf !important;
 }
 
@@ -322,9 +323,16 @@ section .section-subtitle {
     color: #016aaf !important;
 }
 
+.card-text-cargo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #016aaf !important
+
+}
+
 .frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 ​
