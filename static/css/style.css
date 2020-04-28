@@ -93,7 +93,41 @@ body {
     animation-fill-mode: both;
 }
 
-​ .slideInLeft {
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-300%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}
+
+.slideInLeft {
     animation-name: slideInLeft;
 }
 
@@ -158,3 +192,25 @@ body {
 .arrow span:nth-child(3) {
     animation-delay: -0.4s;
 }
+
+.destacados {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.destacados>div>div {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.destacados>div:hover>div {
+    margin-top: -10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+​
