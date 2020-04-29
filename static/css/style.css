@@ -383,7 +383,7 @@ body {
 
     .container-propostas {
 
-        width: 99%;
+        width: 90%;
         margin: auto;
     
     }
@@ -547,5 +547,39 @@ a:hover{
     background: #eee !important;
 
 }
+
+@media (hover:none), (hover:on-demand) { 
+    
+    .pdftelemovel {
+
+        display: block;
+        background: #f7f7fd;
+
+    }
+
+    .pdfpc {
+
+        display: none;
+
+    }
+
+  }
+
+  @media (hover:hover) { 
+    
+    .pdftelemovel {
+
+        display: none;
+
+    }
+
+    .pdfpc {
+
+       display: block;
+       background: #f7f7fd;
+
+    }
+
+  }  
 
 ​
