@@ -652,11 +652,11 @@ body {
 .style_prevu_kit:hover .texto-bloco{
 
     display: block;
-    padding-top: 0px;
+    margin-top: -180px;
     text-align: justify;
     font-family: Helvetica;
-    font-size: 2vh;
-    overflow: auto;
+    font-size: 15px;
+    overflow: hidden;
     -webkit-transition: all 50ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 50ms ease-in;
