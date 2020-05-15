@@ -87,6 +87,8 @@ body {
     opacity: 0.5;
 }
 
+
+
 @media only screen and (min-device-width : 768px)  {
 
     .frontpagetitle {
@@ -103,6 +105,19 @@ body {
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
+    }
+
+    .frontpageaerotec {
+      
+  
+      width: 25vw;
+      position: relative;
+      top: -15vh;
+      animation-name: zoomIn;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
     }
     
 }
@@ -123,6 +138,19 @@ body {
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
+    }
+
+    .frontpageaerotec {
+      
+  
+      width: 35vh;
+      position: relative;
+      top: -15vh;
+      animation-name: zoomIn;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
     }
 
 }
@@ -420,6 +448,7 @@ body {
 .frontside .card .card-title,
 .backside .card .card-title {
     color: #016aaf !important;
+    letter-spacing: 1.2px;
 }
 
 .card-text-cargo {
@@ -511,6 +540,7 @@ body {
     font-weight: bold;
    
 }
+
 
 .accordion-content span {
 
@@ -844,6 +874,23 @@ body {
     
 }
 
+blockquote::after {
+  
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(https://cld.pt/dl/download/0506b2de-187f-4d6a-82f8-6a01ea37a0be/logo-aerotec%20globo.png);
+  background-size: contain;
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ opacity: 0.1;
+}
+
+
 blockquote {
     position: relative;
     display: inline-block;
@@ -852,11 +899,15 @@ blockquote {
     padding: 40px 30px 30px 60px;
     border-radius: 10px;
     font-family: Helvetica;
-    color: #333;
+    color: #000;
     text-align: justify;
     box-shadow: 1px 1px 1px #999, 2px 2px 1px #999, 3px 3px 1px #999;
     transition-duration: 0.3s;
+    z-index: 1;
+      
   }
+
+  
   blockquote span.author {
     position: relative;
     display: block;
@@ -901,6 +952,7 @@ blockquote {
 #mensagem, #multimedia {
 
     background-color: #ebf7ff;
+
 }
 .accordion-content a {
 
