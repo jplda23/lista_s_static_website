@@ -13,6 +13,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Perpetua Titling MT";
+
+  src: local('PerpetuaTitlingMTLight2'), local('PerpetuaTitlingMTLight2'), url('../fonts/PerpetuaTitlingMTLight2.woff2') format('woff2'), url('../fonts/PerpetuaTitlingMTLight2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
@@ -84,7 +92,7 @@ body {
 }
 
 .frontpageimage {
-    background-image: url(https://cld.pt/dl/download/dd4adc60-f41a-4354-978f-90c83fc3d4cd/IMG_3469.JPG);
+    background-image: url(https://cld.pt/dl/download/2df3134a-45c3-449c-8c65-84f430e2dae1/Instituto_Superior_T%C3%A9cnico_8894.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -486,11 +494,21 @@ body {
     border-radius: 50%;
 }
 
-#propostas {
+#propostas, #obrigado {
 
     background: #f7f7fd;
 
 }
+
+
+.container-propostas-pantes {
+  
+  text-align: justify;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+
+}
+
 
 @media only screen and (min-device-width : 768px)  {
 
@@ -962,12 +980,12 @@ blockquote {
   blockquote::before {
     display: block;
     position: absolute;
-    top: -30px;
+    top: -20px;
     left: 5px;
     content: '"';
     font-family: Perpetua Titling MT;
     font-weight: bold;
-    font-size: 120px;
+    font-size: 170px;
     color: #999;
   }
 
@@ -1261,7 +1279,7 @@ blockquote {
 
     /* Tile Dimensions */
     --carousel-tile-spacing: 10px;
-    --carousel-tile-width:   300px;
+    --carousel-tile-width:   400px;
     --carousel-tile-height:  calc(var(--carousel-tile-width) / (16 / 9));
 
     /* Growth Factor */
@@ -1292,6 +1310,8 @@ blockquote {
     background-color: #ebf7ff
 }
 
+
+
 /* Carousel Row */
 .carousel-row {
     white-space: nowrap;
@@ -1318,6 +1338,13 @@ blockquote {
    
   
 }
+.video-maria {
+
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+
 
 /* Add Extra Margin to Last Carousel Tile */
 .carousel-tile:last-of-type {
@@ -1355,6 +1382,17 @@ blockquote {
     transform: translate3d(var(--carousel-offset-right), 0, 0);
     
 }
+
+.carousel-p {
+
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  font-size: 20px;
+  color: #016aaf;
+  text-align: justify;
+  width: 60%;
+  
+}
    
 }
 
@@ -1364,7 +1402,7 @@ blockquote {
 
     /* Tile Dimensions */
     --carousel-tile-spacing: 10px;
-    --carousel-tile-width:   200px;
+    --carousel-tile-width:   250px;
     --carousel-tile-height:  200px;
 
     /* Growth Factor */
@@ -1384,15 +1422,24 @@ blockquote {
     --carousel-transition-3: 0.3s;
 
 }
+.carousel-p {
+
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  color: #016aaf;
+
+}
+
 
 /* Carousel Container */
 .carousel {
     margin: 0;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #ebf7ff
+    background-color: #ebf7ff;
 }
 
 /* Carousel Row */
@@ -1403,7 +1450,9 @@ blockquote {
     margin-left: calc((var(--carousel-tile-width) * (var(--carousel-growth-factor) - 1)) / 2);
     margin-right: calc((var(--carousel-tile-width) * (var(--carousel-growth-factor) - 1)) / 2);
     transition: var(--carousel-transition-2);
-    background-color: #ebf7ff
+    background-color: #ebf7ff;
+    margin-left: 20px;
+
 }
 
 /* Content Tile */
@@ -1460,3 +1509,29 @@ blockquote {
 }
 
 }
+
+.resumo-propostas {
+
+  font-family: Helvetica;
+  font-size: 16px;
+  text-align: justify;
+  margin-top: -10px;
+}
+
+.resumo-propostas-titulo {
+
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: -10px;
+}
+
+.resumo-propostas-emoji {
+
+  display: inline-block;
+  height: 30px;
+}
+
+
+
